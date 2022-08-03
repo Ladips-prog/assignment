@@ -1,0 +1,124 @@
+
+body{
+   background-color: hsl(30, 38%, 92%);
+}
+section{
+    border: 2px solid hsl(0, 0%, 100%);
+    height: 500px;
+    width: 700px;
+    border-radius: 20px;
+    display: flex;
+    background-color: white;
+    margin: 7% auto;
+    text-align: left;
+}
+.start{
+    width: 350px;
+    margin-left: 20px;
+}
+
+.image-product-desktop{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+h2{
+    font-size: 40px;
+    font-family:'Fraunces', serif;
+    margin-right: 80px
+}
+p{
+    font-size: 14px;
+    margin-right: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+.price{
+    margin-top: 50px;
+    display: flex;
+    vertical-align: middle;
+}
+.price #current{
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    margin-top: -5px;
+    color: hsl(158, 36%, 37%)
+}
+.price #old{
+    font-size: 16px;
+}
+button{
+    width:70%;
+    text-align: center;
+    margin-left: -70px;
+    height: 40px;
+    background-color: hsl(158, 36%, 37%);
+    border: 2px solid hsl(158, 36%, 37%);
+    color:hsl(0, 0%, 100%);
+    border-radius: 10px;
+    cursor: pointer
+}
+.image-product-mobile{  
+    display:none;
+}
+svg{
+    margin-left: 70px;
+    position: relative;
+}
+.attribution{
+    text-align: center;
+    
+}
+
+
+@media only screen and (max-width: 375px){
+body{
+    background-color: hsl(30, 38%, 92%);
+    width: 100%;
+    display:block;
+}
+section{
+    margin: 15%  auto;
+    width: 330px;
+    height: 550px;
+    display: block;
+    border: 2px solid white;
+}
+.image-product-desktop{
+    width: 330px;
+    height: 200px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: unset;
+    object-fit: fill;
+}
+
+.attribution{
+    display: none;
+}
+h2{
+    font-size: 20px;
+    font-family:'Fraunces', serif;
+    margin-right: 80px;
+    margin-top: -30px;
+}
+p{
+    font-size: 14px;
+    margin-right: 50px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.price{
+    margin-top: 50px;
+    display: flex;
+    vertical-align: middle;
+    margin-top: -30px;
+}
+.price #current{
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    margin-top: -5px;
+    color: hsl(158, 36%, 37%)
+}
+.price #old{
+    font-size: 16px;
+}
+}
